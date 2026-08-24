@@ -5,3 +5,7 @@ pillow
 matplotlib
 tqdm
 pydantic>=2.0
+python-dotenv
+openai>=1.0
+chromadb
+onnxruntime
