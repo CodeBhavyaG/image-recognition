@@ -112,6 +112,21 @@ def extract_understanding(
                     model=model,
                     messages=[{"role": "user", "content": content}],
                 )
+                
+            # Cost Tracking (Phase 2 requirement)
+            if hasattr(resp, 'usage') and resp.usage:
+                prompt_tokens = resp.usage.prompt_tokens
+                completion_tokens = resp.usage.completion_tokens
+                # Example flat rate or just log the tokens (Groq free tier)
+                with open("cost_log.jsonl", "a") as log:
+                    log.write(json.dumps({
+                        "call_type": "vision",
+                        "model": model,
+                        "image": str(image_path),
+                        "prompt_tokens": prompt_tokens,
+                        "completion_tokens": completion_tokens
+                    }) + "\n")
+                    
             return parse_and_validate(resp.choices[0].message.content)
         except Exception as e:
             last_error = e

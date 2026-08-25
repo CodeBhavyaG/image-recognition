@@ -1,0 +1,1002 @@
+[
+  {
+    "post_id": 1,
+    "post_text": "The wild fox species is highly adaptable and can survive in various environments.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/Vulpes_vulpes_ssp_fulvus.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.47730767726898193,
+        "subject": "Red fox"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.709 > 0.65)",
+        "distance": 0.7086144089698792,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 2,
+    "post_text": "Vulpes vulpes, commonly known for its bushy tail, is a master of stealth.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.715 > 0.65)",
+        "distance": 0.7150630950927734,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.759 > 0.65)",
+        "distance": 0.7588430643081665,
+        "subject": "Small Tortoiseshell butterfly"
+      }
+    ]
+  },
+  {
+    "post_id": 3,
+    "post_text": "Canis lupus is a highly social predator that hunts in packs in the wilderness.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.715 > 0.65)",
+        "distance": 0.7150888442993164,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/Vulpes_vulpes_ssp_fulvus.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.754 > 0.65)",
+        "distance": 0.754267156124115,
+        "subject": "Red fox"
+      }
+    ]
+  },
+  {
+    "post_id": 4,
+    "post_text": "The domestic canine is often considered man's best friend, enjoying playtime in local parks.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cane/OIP-_CIki1JUTS7FD3m1s2sxogHaFj.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.738 > 0.65)",
+        "distance": 0.7383244633674622,
+        "subject": "white fluffy dog"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cane/OIP-_5GCQGVN9m7ed1UX_dUtTQHaFv.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.744 > 0.65)",
+        "distance": 0.7442046403884888,
+        "subject": "Dachshund puppy"
+      }
+    ]
+  },
+  {
+    "post_id": 5,
+    "post_text": "Equus caballus has been used by humans for centuries for transport and agriculture.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.867 > 0.65)",
+        "distance": 0.8665800094604492,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.884 > 0.65)",
+        "distance": 0.8844597935676575,
+        "subject": "roaring male lion"
+      }
+    ]
+  },
+  {
+    "post_id": 6,
+    "post_text": "The massive gray herbivores of the savanna are known for their incredible memory.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.751 > 0.65)",
+        "distance": 0.750861644744873,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.761 > 0.65)",
+        "distance": 0.7605792880058289,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 7,
+    "post_text": "Felis catus is a small domestic carnivorous mammal that loves to chase mice.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.713 > 0.65)",
+        "distance": 0.712895929813385,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.721 > 0.65)",
+        "distance": 0.7211074233055115,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 8,
+    "post_text": "A beautiful insect with colorful wings gracefully landed on a blooming flower.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.5050930976867676,
+        "subject": "Small Tortoiseshell butterfly"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.767 > 0.65)",
+        "distance": 0.766771137714386,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 9,
+    "post_text": "Farm poultry, specifically hens, are essential for egg production in rural areas.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.5805745124816895,
+        "subject": "chicken"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6058154106140137,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 10,
+    "post_text": "The spotted mammal grazing in the pasture provides most of the world's milk.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.693 > 0.65)",
+        "distance": 0.6925792694091797,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/pecora/e83cb2072af51c22d2524518b7444f92e37fe5d404b0144390f8c078a2e8bc_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.723 > 0.65)",
+        "distance": 0.7228055000305176,
+        "subject": "sheep"
+      }
+    ]
+  },
+  {
+    "post_id": 11,
+    "post_text": "A woolly flock grazing quietly in the green field is a peaceful rural sight.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/pecora/e83cb2072af51c22d2524518b7444f92e37fe5d404b0144390f8c078a2e8bc_640.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6452828645706177,
+        "subject": "sheep"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.670 > 0.65)",
+        "distance": 0.670258104801178,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 12,
+    "post_text": "The small rodent with a bushy tail was seen gathering acorns in the forest.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.4902765154838562,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.5626609921455383,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 13,
+    "post_text": "An eight-legged arachnid spun a complex web in the corner of the woodland.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.629409909248352,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.670 > 0.65)",
+        "distance": 0.670495867729187,
+        "subject": "red squirrel"
+      }
+    ]
+  },
+  {
+    "post_id": 14,
+    "post_text": "Majestic big cats of Africa are fierce predators, ruling the food chain.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.662 > 0.65)",
+        "distance": 0.6623697280883789,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.760 > 0.65)",
+        "distance": 0.7596205472946167,
+        "subject": "Small Tortoiseshell butterfly"
+      }
+    ]
+  },
+  {
+    "post_id": 15,
+    "post_text": "The apex predator of the jungle, recognized by its striped coat, prowls silently.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.5378110408782959,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.602816104888916,
+        "subject": "roaring male lion"
+      }
+    ]
+  },
+  {
+    "post_id": 16,
+    "post_text": "A large brown omnivore caught a salmon from the rushing river in North America.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cavallo/OIP-_CiE3X1jze8pK1bWjiF4WwHaE8.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.704 > 0.65)",
+        "distance": 0.7037699818611145,
+        "subject": "galloping brown horse"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.719 > 0.65)",
+        "distance": 0.7188281416893005,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 17,
+    "post_text": "This gentle giant of the ocean feeds entirely on krill and plankton.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.859 > 0.65)",
+        "distance": 0.858634352684021,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.863 > 0.65)",
+        "distance": 0.862898588180542,
+        "subject": "Small Tortoiseshell butterfly"
+      }
+    ]
+  },
+  {
+    "post_id": 18,
+    "post_text": "The fastest land animal can accelerate to incredible speeds during a hunt.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.651 > 0.65)",
+        "distance": 0.651039719581604,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.661 > 0.65)",
+        "distance": 0.6612023115158081,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 19,
+    "post_text": "A large primate known for its intelligence and use of tools in the dense jungle.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.678 > 0.65)",
+        "distance": 0.6777579188346863,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.694 > 0.65)",
+        "distance": 0.6938446760177612,
+        "subject": "roaring male lion"
+      }
+    ]
+  },
+  {
+    "post_id": 20,
+    "post_text": "The tall, long-necked herbivore reached the highest leaves on the acacia tree.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6397100687026978,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.668 > 0.65)",
+        "distance": 0.6675528287887573,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 21,
+    "post_text": "A venomous reptile slithered silently across the desert sand.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.700 > 0.65)",
+        "distance": 0.6999961733818054,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.751 > 0.65)",
+        "distance": 0.7510392665863037,
+        "subject": "Small Tortoiseshell butterfly"
+      }
+    ]
+  },
+  {
+    "post_id": 22,
+    "post_text": "This black and white bird cannot fly, but it swims gracefully in icy waters.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.708 > 0.65)",
+        "distance": 0.7083406448364258,
+        "subject": "chicken"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.723 > 0.65)",
+        "distance": 0.7233445644378662,
+        "subject": "Small Tortoiseshell butterfly"
+      }
+    ]
+  },
+  {
+    "post_id": 23,
+    "post_text": "A large amphibious creature basked in the sun on the muddy riverbank.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.693 > 0.65)",
+        "distance": 0.6925321221351624,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.705 > 0.65)",
+        "distance": 0.7053114175796509,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 24,
+    "post_text": "The nocturnal bird of prey rotated its head to locate a mouse in the dark.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6293088793754578,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.664 > 0.65)",
+        "distance": 0.6643336415290833,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 25,
+    "post_text": "A marine mammal known for its playful behavior and high intelligence leaped from the water.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.709 > 0.65)",
+        "distance": 0.7090694308280945,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.728 > 0.65)",
+        "distance": 0.7284957766532898,
+        "subject": "red squirrel"
+      }
+    ]
+  },
+  {
+    "post_id": 26,
+    "post_text": "The colorful parrot mimicked human speech perfectly in the tropical canopy.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.668 > 0.65)",
+        "distance": 0.6676475405693054,
+        "subject": "chicken"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.686 > 0.65)",
+        "distance": 0.6860368847846985,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 27,
+    "post_text": "A heavily armored mammal rolled into a ball to protect itself from predators.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.668 > 0.65)",
+        "distance": 0.6680161952972412,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/Vulpes_vulpes_ssp_fulvus.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.670 > 0.65)",
+        "distance": 0.6699983477592468,
+        "subject": "Red fox"
+      }
+    ]
+  },
+  {
+    "post_id": 28,
+    "post_text": "The slow-moving creature spent its entire day hanging upside down in the rainforest.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.702 > 0.65)",
+        "distance": 0.7023981809616089,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.736 > 0.65)",
+        "distance": 0.7361666560173035,
+        "subject": "roaring male lion"
+      }
+    ]
+  },
+  {
+    "post_id": 29,
+    "post_text": "A massive flightless bird ran swiftly across the arid outback.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6089249849319458,
+        "subject": "chicken"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6421952247619629,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 30,
+    "post_text": "The large marsupial carried its young in a pouch while hopping away.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.674 > 0.65)",
+        "distance": 0.6740853190422058,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.730 > 0.65)",
+        "distance": 0.7297303080558777,
+        "subject": "Small Tortoiseshell butterfly"
+      }
+    ]
+  },
+  {
+    "post_id": 31,
+    "post_text": "A small prickly mammal curled up defensively in the underbrush.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.5541322231292725,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6147894859313965,
+        "subject": "roaring male lion"
+      }
+    ]
+  },
+  {
+    "post_id": 32,
+    "post_text": "The majestic bird of prey soared high above the mountains, scanning for food.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.730 > 0.65)",
+        "distance": 0.7302432060241699,
+        "subject": "chicken"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.750 > 0.65)",
+        "distance": 0.7500581741333008,
+        "subject": "red squirrel"
+      }
+    ]
+  },
+  {
+    "post_id": 33,
+    "post_text": "A brightly colored amphibian warned predators of its toxicity in the damp rainforest.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.692 > 0.65)",
+        "distance": 0.6920504570007324,
+        "subject": "Small Tortoiseshell butterfly"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.738 > 0.65)",
+        "distance": 0.7376759052276611,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 34,
+    "post_text": "The large marine predator with rows of sharp teeth patrolled the reef.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.695 > 0.65)",
+        "distance": 0.6954071521759033,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.799 > 0.65)",
+        "distance": 0.798528254032135,
+        "subject": "red squirrel"
+      }
+    ]
+  },
+  {
+    "post_id": 35,
+    "post_text": "A small flying mammal navigated the dark cave using echolocation.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.660 > 0.65)",
+        "distance": 0.6602064371109009,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.684 > 0.65)",
+        "distance": 0.6844481825828552,
+        "subject": "red squirrel"
+      }
+    ]
+  },
+  {
+    "post_id": 36,
+    "post_text": "The desert dwelling mammal with humps is perfectly adapted to survive without water.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.774 > 0.65)",
+        "distance": 0.7738664150238037,
+        "subject": "maned wolf"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.775 > 0.65)",
+        "distance": 0.7749274969100952,
+        "subject": "red squirrel"
+      }
+    ]
+  },
+  {
+    "post_id": 37,
+    "post_text": "A large bovine with curved horns grazed peacefully on the vast plains.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/pecora/e83cb2072af51c22d2524518b7444f92e37fe5d404b0144390f8c078a2e8bc_640.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.609479546546936,
+        "subject": "sheep"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6151494383811951,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 38,
+    "post_text": "The clever cephalopod changed its skin color to blend in with the coral reef.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.740 > 0.65)",
+        "distance": 0.7395804524421692,
+        "subject": "Small Tortoiseshell butterfly"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.848 > 0.65)",
+        "distance": 0.8475792407989502,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 39,
+    "post_text": "A small crustacean scuttled sideways along the sandy beach.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.719 > 0.65)",
+        "distance": 0.7185555100440979,
+        "subject": "Small Tortoiseshell butterfly"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.771 > 0.65)",
+        "distance": 0.7711319923400879,
+        "subject": "red squirrel"
+      }
+    ]
+  },
+  {
+    "post_id": 40,
+    "post_text": "The large aquatic bird scooped up a fish in its massive throat pouch.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.724 > 0.65)",
+        "distance": 0.7244539260864258,
+        "subject": "chicken"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.740 > 0.65)",
+        "distance": 0.7399312853813171,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 41,
+    "post_text": "A furry marine mammal floated on its back, cracking a shell with a rock.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6184609532356262,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.659 > 0.65)",
+        "distance": 0.6586189866065979,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 42,
+    "post_text": "The elusive snow predator, perfectly camouflaged, stalked its prey in the Himalayas.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/Vulpes_vulpes_ssp_fulvus.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6074358224868774,
+        "subject": "Red fox"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.672 > 0.65)",
+        "distance": 0.6723587512969971,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 43,
+    "post_text": "A social insect worked tirelessly to gather pollen and nectar for the hive.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.785 > 0.65)",
+        "distance": 0.7850086688995361,
+        "subject": "Small Tortoiseshell butterfly"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.866 > 0.65)",
+        "distance": 0.8663771748542786,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 44,
+    "post_text": "The large, powerful ape beat its chest in a display of dominance.",
+    "matches": [
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6458820104598999,
+        "subject": "roaring male lion"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.781 > 0.65)",
+        "distance": 0.7805112600326538,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 45,
+    "post_text": "A small, burrowing mammal dug an extensive network of tunnels underground.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.6470569372177124,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.662 > 0.65)",
+        "distance": 0.6619520783424377,
+        "subject": "maned wolf"
+      }
+    ]
+  },
+  {
+    "post_id": 46,
+    "post_text": "The vibrantly colored fish swam defensively among the stinging tentacles of the anemone.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.742 > 0.65)",
+        "distance": 0.7423352003097534,
+        "subject": "Small Tortoiseshell butterfly"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/pecora/e83cb2072af51c22d2524518b7444f92e37fe5d404b0144390f8c078a2e8bc_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.822 > 0.65)",
+        "distance": 0.8218644857406616,
+        "subject": "sheep"
+      }
+    ]
+  },
+  {
+    "post_id": 47,
+    "post_text": "A large wading bird with pink plumage filtered food from the shallow lagoon.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.5744549632072449,
+        "subject": "chicken"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg",
+        "status": "ACCEPTED",
+        "reason": "Good match",
+        "distance": 0.5785515904426575,
+        "subject": "chicken"
+      }
+    ]
+  },
+  {
+    "post_id": 48,
+    "post_text": "The armored reptile patiently waited for prey near the water's edge.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.779 > 0.65)",
+        "distance": 0.7787606120109558,
+        "subject": "Small Tortoiseshell butterfly"
+      },
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.799 > 0.65)",
+        "distance": 0.7985697388648987,
+        "subject": "roaring male lion"
+      }
+    ]
+  },
+  {
+    "post_id": 49,
+    "post_text": "A small, agile primate leaped effortlessly from branch to branch in Madagascar.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.703 > 0.65)",
+        "distance": 0.7026708126068115,
+        "subject": "red squirrel"
+      },
+      {
+        "image_id": "data/Lion-Joseph_06-AI.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.717 > 0.65)",
+        "distance": 0.7168416976928711,
+        "subject": "roaring male lion"
+      }
+    ]
+  },
+  {
+    "post_id": 50,
+    "post_text": "The massive marine reptile slowly made its way up the beach to lay its eggs.",
+    "matches": [
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.758 > 0.65)",
+        "distance": 0.7581501603126526,
+        "subject": "Small Tortoiseshell butterfly"
+      },
+      {
+        "image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg",
+        "status": "REJECTED",
+        "reason": "Similarity below threshold (cosine distance 0.799 > 0.65)",
+        "distance": 0.7987588047981262,
+        "subject": "chicken"
+      }
+    ]
+  }
+]

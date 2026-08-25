@@ -1,0 +1,12 @@
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "data/Lion-Joseph_06-AI.jpg", "prompt_tokens": 881, "completion_tokens": 211}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cavallo/OIP-_CiE3X1jze8pK1bWjiF4WwHaE8.jpeg", "prompt_tokens": 1905, "completion_tokens": 659}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/pecora/e83cb2072af51c22d2524518b7444f92e37fe5d404b0144390f8c078a2e8bc_640.jpg", "prompt_tokens": 1905, "completion_tokens": 326}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg", "prompt_tokens": 1896, "completion_tokens": 286}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg", "prompt_tokens": 1905, "completion_tokens": 249}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg", "prompt_tokens": 1393, "completion_tokens": 216}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cane/OIP-_5GCQGVN9m7ed1UX_dUtTQHaFv.jpeg", "prompt_tokens": 1905, "completion_tokens": 1158}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cane/OIP-_CIki1JUTS7FD3m1s2sxogHaFj.jpeg", "prompt_tokens": 1905, "completion_tokens": 301}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg", "prompt_tokens": 1905, "completion_tokens": 427}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg", "prompt_tokens": 1905, "completion_tokens": 320}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg", "prompt_tokens": 1905, "completion_tokens": 212}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/Vulpes_vulpes_ssp_fulvus.jpg", "prompt_tokens": 1905, "completion_tokens": 411}
