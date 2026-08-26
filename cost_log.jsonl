@@ -12,3 +12,5 @@
 {"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/Vulpes_vulpes_ssp_fulvus.jpg", "prompt_tokens": 1905, "completion_tokens": 411}
 {"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "data/Lion-Joseph_06-AI.jpg", "prompt_tokens": 881, "completion_tokens": 297}
 {"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/mucca/OIP-_T8AQvjmXvcLySyAH7_UpwHaE_.jpeg", "prompt_tokens": 1905, "completion_tokens": 283}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "data/uploads/OIP--QZbYG1Khwn66kljNYFGTgHaFl.jpeg", "prompt_tokens": 1905, "completion_tokens": 228}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "data/uploads/OIP-j8Y0k7BqD32-2ugtcN6x-QHaEK.jpeg", "prompt_tokens": 881, "completion_tokens": 216}

@@ -1,68 +1,125 @@
-"""CLI entry point for the animal image classifier.
+from fastapi import FastAPI, HTTPException, BackgroundTasks, UploadFile, File
+from pydantic import BaseModel
+from typing import List, Optional
+import sqlite3
+import os
+import shutil
 
-Commands:
-    python main.py train      -- train the transfer-learning classifier
-    python main.py evaluate   -- per-class report + top-1 precision + confusion matrix
-    python main.py predict    -- classify an image/folder, emit structured JSON
-"""
-import argparse
+from batch_processor import BatchProcessor, DB_PATH, setup_db
+from vector_db import VectorDB
 
-from config import (
-    MODEL_NAME, EPOCHS, BATCH_SIZE, LR, FREEZE_BACKBONE, SEED,
-    RAW_IMAGE_DIR, MODELS_DIR, OUTPUTS_DIR,
-)
+app = FastAPI(title="Image Matching Engine API")
 
+# Initialize shared components
+processor = BatchProcessor()
+vector_db = VectorDB()
 
-def _parse_args(argv=None):
-    p = argparse.ArgumentParser(prog="image-recognition",
-                                description="Animal image classifier (capstone starter).")
-    sub = p.add_subparsers(dest="command", required=True)
+# Ensure uploads directory exists
+UPLOAD_DIR = "data/uploads"
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-    tr = sub.add_parser("train", help="Train the transfer-learning classifier.")
-    tr.add_argument("--model", default=MODEL_NAME, help="resnet18 | mobilenet_v3_small")
-    tr.add_argument("--epochs", type=int, default=EPOCHS)
-    tr.add_argument("--batch-size", type=int, default=BATCH_SIZE)
-    tr.add_argument("--lr", type=float, default=LR)
-    tr.add_argument("--freeze-backbone", action="store_true", default=FREEZE_BACKBONE)
-    tr.add_argument("--raw-image-dir", default=str(RAW_IMAGE_DIR))
-    tr.add_argument("--seed", type=int, default=SEED)
-
-    ev = sub.add_parser("evaluate", help="Evaluate the trained model on the validation split.")
-    ev.add_argument("--checkpoint", default=str(MODELS_DIR / "best.pt"))
-    ev.add_argument("--raw-image-dir", default=str(RAW_IMAGE_DIR))
-    ev.add_argument("--output-dir", default=str(OUTPUTS_DIR))
-
-    pr = sub.add_parser("predict", help="Classify image(s) and emit structured JSON.")
-    pr.add_argument("--checkpoint", default=str(MODELS_DIR / "best.pt"))
-    pr.add_argument("--image", default=None, help="Path to a single image.")
-    pr.add_argument("--dir", dest="dir_", default=None, help="Path to a folder of images.")
-    pr.add_argument("--topk", type=int, default=3)
-
-    return p.parse_args(argv)
-
-
-def main(argv=None):
-    args = _parse_args(argv)
-    if args.command == "train":
-        from train import train_all
-        train_all(
-            model_name=args.model, epochs=args.epochs, batch_size=args.batch_size,
-            lr=args.lr, freeze_backbone=args.freeze_backbone,
-            raw_image_dir=args.raw_image_dir, seed=args.seed,
+# Setup the review table
+def setup_review_db():
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS reviews (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            post_text TEXT,
+            image_id TEXT,
+            status TEXT,
+            reason TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
-    elif args.command == "evaluate":
-        from evaluate import evaluate
-        evaluate(checkpoint=args.checkpoint, raw_image_dir=args.raw_image_dir,
-                 output_dir=args.output_dir)
-    elif args.command == "predict":
-        source = args.image or args.dir_
-        if not source:
-            print("predict requires --image <path> or --dir <path>", file=__import__("sys").stderr)
-            return 2
-        from predict import predict_main
-        predict_main(checkpoint=args.checkpoint, source=source, topk=args.topk)
-    return 0
+    ''')
+    conn.commit()
+    conn.close()
 
+setup_review_db()
+
+# --- Phase 4: Background Processing API ---
+
+@app.post("/images/upload")
+async def upload_image(file: UploadFile = File(...)):
+    """Upload a single image from your computer and queue it for background AI processing."""
+    file_path = os.path.join(UPLOAD_DIR, file.filename)
+    
+    # Save the uploaded file to disk
+    with open(file_path, "wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+        
+    # Enqueue the saved file path for the background worker
+    processor.queue_image(file_path)
+    
+    return {
+        "message": f"Successfully uploaded and queued {file.filename}.",
+        "queued_file": file_path
+    }
+
+@app.get("/images/status")
+def get_status():
+    """Check the status of the background batch jobs."""
+    return processor.get_progress()
+
+# --- Phase 3 & 5: Matching and Review API ---
+
+class RankRequest(BaseModel):
+    post_text: str
+    top_k: int = 3
+    threshold: float = 0.65
+    required_subject: Optional[str] = None
+
+@app.post("/posts/rank")
+def rank_images(req: RankRequest):
+    """Rank images for a given post using semantic similarity and the Mismatch Guard."""
+    candidates = vector_db.rank_images_for_post(
+        post_text=req.post_text, 
+        top_k=req.top_k, 
+        max_cosine_distance=req.threshold,
+        required_subject=req.required_subject
+    )
+    
+    if not candidates:
+        return {"message": "No confident match found. Similarity below threshold or no images available."}
+        
+    return {"candidates": candidates}
+
+class ReviewRequest(BaseModel):
+    post_text: str
+    image_id: str
+    status: str  # 'APPROVED' or 'REJECTED'
+    reason: Optional[str] = None
+
+@app.post("/review")
+def review_match(req: ReviewRequest):
+    """Approve or reject a suggested image-post pairing."""
+    if req.status not in ["APPROVED", "REJECTED"]:
+        raise HTTPException(status_code=400, detail="Status must be APPROVED or REJECTED")
+        
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute(
+        "INSERT INTO reviews (post_text, image_id, status, reason) VALUES (?, ?, ?, ?)",
+        (req.post_text, req.image_id, req.status, req.reason)
+    )
+    conn.commit()
+    conn.close()
+    
+    return {"message": f"Successfully {req.status} the match."}
+
+@app.get("/review/history")
+def get_review_history():
+    """Inspect the history of approvals and rejections."""
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    c = conn.cursor()
+    c.execute("SELECT * FROM reviews ORDER BY created_at DESC LIMIT 50")
+    rows = c.fetchall()
+    conn.close()
+    
+    return {"reviews": [dict(r) for r in rows]}
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    import uvicorn
+    # To run: python main.py
+    uvicorn.run(app, host="0.0.0.0", port=8000)

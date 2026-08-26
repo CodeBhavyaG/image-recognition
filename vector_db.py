@@ -38,7 +38,7 @@ class VectorDB:
             metadatas=[meta]
         )
 
-    def rank_images_for_post(self, post_text: str, top_k: int = 5, max_cosine_distance: float = 0.5) -> List[Dict[str, Any]]:
+    def rank_images_for_post(self, post_text: str, top_k: int = 5, max_cosine_distance: float = 0.5, required_subject: str = None) -> List[Dict[str, Any]]:
         """
         Ranks images against a blog post and applies a mismatch guard.
         Returns a list of image candidates with their acceptance status.
@@ -71,6 +71,17 @@ class VectorDB:
                 })
                 continue
                 
+            # Mismatch guard 1.5: strict subject match (The "walking chicken" fix)
+            if required_subject and required_subject.lower() not in meta.get("subject", "").lower():
+                ranked.append({
+                    "id": img_id,
+                    "status": "REJECTED",
+                    "reason": f"Subject mismatch: expected {required_subject}, detected {meta.get('subject')}",
+                    "metadata": meta,
+                    "distance": distance
+                })
+                continue
+
             # Mismatch guard 2: minimum confidence from vision model
             if meta.get("confidence", 0.0) < 0.7:
                  ranked.append({
