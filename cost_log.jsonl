@@ -10,3 +10,5 @@
 {"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg", "prompt_tokens": 1905, "completion_tokens": 320}
 {"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg", "prompt_tokens": 1905, "completion_tokens": 212}
 {"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/Vulpes_vulpes_ssp_fulvus.jpg", "prompt_tokens": 1905, "completion_tokens": 411}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "data/Lion-Joseph_06-AI.jpg", "prompt_tokens": 881, "completion_tokens": 297}
+{"call_type": "vision", "model": "qwen/qwen3.6-27b", "image": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/mucca/OIP-_T8AQvjmXvcLySyAH7_UpwHaE_.jpeg", "prompt_tokens": 1905, "completion_tokens": 283}
