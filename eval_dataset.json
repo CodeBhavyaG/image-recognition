@@ -1,0 +1,58 @@
+[
+  {
+    "post_text": "A beautiful galloping brown horse with a white blaze running in the snow.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cavallo/OIP-_CiE3X1jze8pK1bWjiF4WwHaE8.jpeg"
+  },
+  {
+    "post_text": "The majestic male lion roaring with his mouth open on the grass.",
+    "expected_image_id": "data/Lion-Joseph_06-AI.jpg"
+  },
+  {
+    "post_text": "A sheep with a black face standing in a dry heather field.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/pecora/e83cb2072af51c22d2524518b7444f92e37fe5d404b0144390f8c078a2e8bc_640.jpg"
+  },
+  {
+    "post_text": "A brown chicken with a red comb actively walking through dry grass.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/6.jpeg"
+  },
+  {
+    "post_text": "A chicken standing completely alert and still in a grassy field.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/gallina/28.jpeg"
+  },
+  {
+    "post_text": "A cute dapple-coated Dachshund puppy on a grey floor.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cane/OIP-_5GCQGVN9m7ed1UX_dUtTQHaFv.jpeg"
+  },
+  {
+    "post_text": "A white, fluffy dog standing near a chain-link fence outdoors.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/cane/OIP-_CIki1JUTS7FD3m1s2sxogHaFj.jpeg"
+  },
+  {
+    "post_text": "A close-up of a red squirrel sitting on a mossy branch eating a nut.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/scoiattolo/OIP--0Yr2a_yg2hs5QgCoHAOnAHaLJ.jpeg"
+  },
+  {
+    "post_text": "A vibrant butterfly resting on a thistle bud with purple flowers.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/farfalla/e832b7072ef41c22d2524518b7444f92e37fe5d404b0144390f8c770a1edb6_640.jpg"
+  },
+  {
+    "post_text": "A tall maned wolf with long black legs standing in a forest clearing.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/images.jpeg"
+  },
+  {
+    "post_text": "A red fox surviving in a freezing winter forest with deep snow.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/Vulpes_vulpes_ssp_fulvus.jpg"
+  },
+  {
+    "post_text": "A large black bull with curved horns grazing in a grassy field.",
+    "expected_image_id": "/Users/archbutmac/Desktop/image-recognition/data/raw/image/mucca/OIP-_T8AQvjmXvcLySyAH7_UpwHaE_.jpeg"
+  },
+  {
+    "post_text": "A muscular white Charolais bull at a livestock show with spectators.",
+    "expected_image_id": "data/uploads/OIP--QZbYG1Khwn66kljNYFGTgHaFl.jpeg"
+  },
+  {
+    "post_text": "A brown cow peacefully resting on a dirt path surrounded by greenery.",
+    "expected_image_id": "data/uploads/OIP-j8Y0k7BqD32-2ugtcN6x-QHaEK.jpeg"
+  }
+]

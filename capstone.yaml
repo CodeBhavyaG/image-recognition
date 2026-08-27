@@ -1,0 +1,23 @@
+project_name: "FlyRank - AI Image Understanding & Content Matching Engine"
+version: "1.0.0"
+
+features_implemented:
+  - Phase 1: Structured JSON Vision AI extraction (groq_extract.py)
+  - Phase 2: Per-call token cost tracking (cost_log.jsonl)
+  - Phase 3: Vector database & Semantic matching (vector_db.py)
+  - Phase 3.5: Safety layer / Mismatch guard (vector_db.py)
+  - Phase 4: Background processing jobs with retries (batch_processor.py)
+  - Phase 5: FastAPI backend & manual review workflow (main.py)
+
+evaluations:
+  automated_tests_passing: true
+  top_1_precision_score: 100.0
+  eval_dataset_size: 14
+
+tech_stack:
+  - Python
+  - FastAPI
+  - SQLite (Queues & Review history)
+  - ChromaDB (Embeddings)
+  - Groq API (Vision Model)
+  - Pytest
